@@ -1,4 +1,4 @@
-name: Daily Radio Transcription
+name: CNN Radio Transcription
 
 on:
   schedule:
