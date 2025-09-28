@@ -1,4 +1,5 @@
 # name,url,lang,cc,ua,referer
-IMER_Noticias,https://s2.mexside.net:8010/stream,es,MX,,
-CNN,https://tunein.streamguys1.com/cnnen,en,US,"Mozilla/5.0","https://tunein.com/"
-RadioNacional_AR,http://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad39,es,AR,,
+VOA,https://voa-22.akacast.akamaistream.net/7/22/451661/v1/ibb.akacast.akamaistream.net/voa-22,en,US,,
+CBS,https://stream.revma.ihrhls.com/zc2147,en,US,,
+Bloomberg,https://bloomberg-radio.streamguys1.com/us.mp3,en,US,,
+ABCNews, https://abcnewsradio-iheart.streamguys1.com/abcnewsradio,en,US,,
