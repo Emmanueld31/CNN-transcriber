@@ -1,5 +1,7 @@
 # name,url,lang,cc,ua,referer
-VOA,https://voa-22.akacast.akamaistream.net/7/22/451661/v1/ibb.akacast.akamaistream.net/voa-22,en,US,,
-CBS,https://stream.revma.ihrhls.com/zc2147,en,US,,
-Bloomberg,https://bloomberg-radio.streamguys1.com/us.mp3,en,US,,
-ABCNews, https://abcnewsradio-iheart.streamguys1.com/abcnewsradio,en,US,,
+VOA,https://voa-ingest.akamaized.net/hls/live/2035200/161_352R/playlist.m3u8,en,US,Mozilla/5.0, 
+Bloomberg,https://www.bloomberg.com/media-manifest/streams/phoenix-us.m3u8,en,US,Mozilla/5.0,
+KQED2,https://streams.kqed.org/kqedradio,en,US,Mozilla/5.0,
+WBEZChicago,https://stream.wbez.org/wbez128.mp3,en,US,Mozilla/5.0,
+WNYCNew York,https://stream.wnyc.org/wnycfm,en,US,Mozilla/5.0,
+NHPR,https://nhpr.streamguys1.com/nhpr.mp3,en,US,Mozilla/5.0,
