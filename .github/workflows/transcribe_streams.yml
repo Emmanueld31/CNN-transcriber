@@ -70,8 +70,8 @@ jobs:
         if: always()
         run: |
           set -euo pipefail
-          tar -czf transcripts.tar.gz -C live_output . || true
-          tar -czf logs.tar.gz -C logs . || true
+          tar -czf transcripts_us_radio.tar.gz -C live_output . || true
+          tar -czf log_us_radios.tar.gz -C logs . || true
           ls -lh *.tar.gz || true
 
       - name: Encrypt packages
@@ -80,14 +80,14 @@ jobs:
           ARTIFACT_PASS: ${{ secrets.ARTIFACT_PASS }}
         run: |
           set -euo pipefail
-          if [ -f transcripts.tar.gz ]; then
+          if [ -f transcripts_us_radio.tar.gz ]; then
             openssl enc -aes-256-cbc -salt -pbkdf2 \
-              -in transcripts.tar.gz -out transcripts.tar.gz.enc \
+              -in transcripts_us_radio.tar.gz -out transcripts_us_radio.tar.gz.enc \
               -pass env:ARTIFACT_PASS
           fi
-          if [ -f logs.tar.gz ]; then
+          if [ -f log_us_radios.tar.gz ]; then
             openssl enc -aes-256-cbc -salt -pbkdf2 \
-              -in logs.tar.gz -out logs.tar.gz.enc \
+              -in log_us_radios.tar.gz -out log_us_radios.tar.gz.enc \
               -pass env:ARTIFACT_PASS
           fi
           ls -lh *.enc || true
@@ -98,7 +98,7 @@ jobs:
         with:
           name: encrypted-${{ github.run_id }}
           path: |
-            transcripts.tar.gz.enc
-            logs.tar.gz.enc
+            transcripts_us_radio.tar.gz.enc
+            log_us_radios.tar.gz.enc
           retention-days: 14
           if-no-files-found: warn
