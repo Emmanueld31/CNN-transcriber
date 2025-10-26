@@ -2,7 +2,7 @@ name: CNN Radio Transcription
 
 on:
   schedule:
-    - cron: "0 22 * * *"   # 22:00 UTC
+    - cron: "0 23 * * *"   # 22:00 UTC
   workflow_dispatch:
 
 concurrency:
